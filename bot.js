@@ -1,12 +1,18 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
+
+var StatusMessageArray = ['Eating stray cats to build energy.',
+                          'Bathing in the blood of the innocent.', 
+                          'Focusing darkness around specified targets.'];
+
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
     colorize: true
 });
 logger.level = 'debug';
+
 // Initialize Discord Bot
 var bot = new Discord.Client({
    token: auth.token,
@@ -33,7 +39,22 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'Currently unable to open a portal to Hell.  Try again later.'
                 });
             break;
-            // Just add any case commands if you want to..
+            
+            // !status
+            case 'status':
+              var i = Math.floor(Math.random() * Math.floor(StatusMessageArray.length));
+                bot.sendMessage({
+                  to: channelID,
+                  message: StatusMessageArray[i]
+                });
+            break;
+            
+            // unrecognized command
+            default:
+              bot.sendMessage({
+                to: channelID,
+                message: 'Request outside of the parameters of demonic contract.'
+              });
          }
      }
 });
