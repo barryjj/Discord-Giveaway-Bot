@@ -1,11 +1,14 @@
 {
   "name": "Discord-Giveaway-Bot",
   "version": "1.0.0",
-  "description": "Better than Modbot, fuckin' believe it.",
+  "description": "Better than Modbot, believe it.",
   "main": "bot.js",
   "author": "Frost",
   "dependencies": {
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
     "winston": "^3.0.0"
+  },
+  "engines" : {
+    "node": "8.11.3"
   }
 }
