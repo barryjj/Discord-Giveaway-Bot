@@ -12,7 +12,8 @@ var macroMap = {
   grandpahedge: 'https://media.giphy.com/media/2ALDsRipuShI8A3gXV/giphy.gif',
   dogsoon: 'https://media.giphy.com/media/5xtDarzgzG6eu6uVwI0/giphy.gif',
   grandpaturnaround: 'https://giphy.com/gifs/fDO2Nk0ImzvvW',
-  howdareyou: 'https://78.media.tumblr.com/tumblr_m64dbowpB71qm7tbzo1_500.gif'
+  howdareyou: 'https://78.media.tumblr.com/tumblr_m64dbowpB71qm7tbzo1_500.gif',
+  revenge: 'https://media.giphy.com/media/6uu3nwQ1aD6t7DHotY/giphy.gif'
 };
 
 
