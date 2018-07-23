@@ -16,5 +16,5 @@ auth.json:
 You will need to run the following NPM command in the root directory of your install before starting the bot.
 
 ```
-npm install discord.io https://github.com/woor/discord.io/tarball/gateway_v6 winston --save
+npm install discord.io lodash https://github.com/woor/discord.io/tarball/gateway_v6 winston --save
 ```
