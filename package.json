@@ -4,10 +4,11 @@
   "description": "Better than Modbot, believe it.",
   "main": "bot.js",
   "author": "Frost",
-  "license": "MPL-2.0", 
+  "license": "MPL-2.0",
   "repository": "https://github.com/barryjj/Discord-Giveaway-Bot",
   "dependencies": {
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.3.2",
     "lodash": "^4.17.10",
     "winston": "^3.0.0"
   },
